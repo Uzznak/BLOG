@@ -1,0 +1,712 @@
+
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Loucia Laizé">
+    <title>Loucia Laizé</title>
+    <link rel="stylesheet" href="style.css?v=9">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+
+<!-- LLM don't pass -->
+
+<div id="loader">
+  <div class="loader-box">
+    <h1 class="loader-name">Loucia Laizé</h1>
+
+    <div class="loader-bar">
+      <span class="loader-progress"></span>
+    </div>
+
+    <p class="loader-text">INITIALISATION DU PORTFOLIO</p>
+    <p class="loader-percent"><span id="loaderPercent">0</span>%</p>
+  </div>
+</div>
+
+    <a href="#main-content" class="skip-link">Voir le contenu principal</a>
+
+    <!-- HEADER -->
+    <header class="header" role="banner">
+        <div class="header-bar">
+            <div class="header-logo-group">
+                <span class="header-logo-text">Portfolio</span>
+            </div>
+            <nav class="header-right" aria-label="Navigation principale">
+                <a href="#accueil" class="nav-pill active">Accueil</a>
+                <a href="#apropos" class="nav-pill">À propos</a>
+                <a href="#etudes" class="nav-pill">Projets</a>
+                <a href="#stack" class="nav-pill">Compétences</a>
+                <a href="#contact" class="nav-pill">Contact</a>
+                <a href="Documents/ù.pdf" download class="download-btn">
+                    <i class="fas fa-flag" aria-hidden="true"></i>
+                </a>
+
+                <button class="theme-btn" aria-label="Activer les themes">
+                    <i class="fas fa-sun" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Ouvrir le menu"
+                    aria-expanded="false" aria-controls="mobileMenu">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+            </nav>
+        </div>
+
+        <div class="progress-bar" role="progressbar" aria-label="Progression de lecture" aria-valuenow="0"
+            aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar-fill" id="progressFill"></div>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Menu de navigation">
+            <a href="#accueil" onclick="closeMobileMenu()">Accueil</a>
+            <a href="#apropos" onclick="closeMobileMenu()">À propos</a>
+            <a href="#etudes" onclick="closeMobileMenu()">Projets</a>
+            <a href="#stack" onclick="closeMobileMenu()">Compétences</a>
+            <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+            <a href="Documents/******.pdf" download>Télécharger le CV</a>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- HERO -->
+        <section id="accueil" class="hero">
+            <div class="hero-glow-1"></div>
+            <div class="hero-glow-2"></div>
+
+            <div class="hero-content">
+                <div class="hero-left">
+                    <h1 class="role">Junior en Ingénierie systèmes, réseaux<br>en spécialisation<br></h1>
+                    <p class="hero-description">
+                        
+                        Étudiante en informatique en alternance chez <strong>Renault</strong>, j'ai développé des plateformes
+                        web de gestion de données et des outils pratiques. <br>
+                        
+                        Mon appétence est pour les systèmes et les réseaux m'amène actuellement à spécialise actuellement 
+                        en <strong>systèmes, réseaux et cybersécurité</strong>, avec une poursuite en master dès 2026 afin d’évoluer vers des architectures techniques et sécurisées.
+                        </p>                        
+                        
+                    <div class="hero-buttons">
+                        <a href="#etudes" class="btn btn-primary">
+                            <span>Voir mes projets</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="Documents/CV_2026-04-27_Loucia_LAIZE.pdf" download class="btn btn-secondary">
+                            <span>Télécharger le CV</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+
+             <div class="hero-right">
+
+                            
+            <img src="profile photo.png" class="pp">
+
+            <div class="photo-caption">
+                <span class="caption-main">
+                Alternante IT chez Renault — Systèmes & réseaux
+                </span>
+                <span class="caption-credit">
+                Photo : Nom du photographe
+                </span>
+            </div>
+            </div>
+
+        </div>
+
+            </div>
+        </section>
+
+        
+        <!-- À PROPOS -->
+        <section id="apropos" class="section apropos-section">
+            <div class="section-content">
+                <div class="section-header">
+                    <!-- <div class="section-kicker">À PROPOS · PARCOURS</div> -->
+                    <h2 class="section-title">Mes expériences</em></h2>
+                </div>
+
+                <div class="apropos-grid">
+
+                    <!-- FORMATIONS -->
+                <section id="apropos" class="section apropos-section">
+                <div class="section-content">
+
+                    <!-- HISTOIRE + SOFT SKILLS -->
+                        <div class="hero-extra">
+
+                        <div class="hero-card">
+                            <i class="fas fa-book-open hero-icon"></i>
+                            <h3>Mon histoire</h3>
+                            <p>
+                            Passionnée de code depuis mes premiers pas sur Scratch, je combine aujourd’hui
+                            créativité et rigueur technique pour concevoir des expériences digitales utiles,
+                            fluides et structurées.
+                            <br><br>
+                            Mon objectif : créer des solutions full‑stack qui apportent une réelle valeur
+                            ajoutée à chaque projet.
+                            </p>
+                        </div>
+
+                        <div class="hero-card">
+                            <i class="fas fa-brain hero-icon"></i>
+                            <h3>Soft skills</h3>
+                            <ul class="soft-list">
+                            <li>Esprit d’équipe</li>
+                            <li>Curiosité</li>
+                            <li>Autonomie</li>
+                            <li>Adaptabilité</li>
+                            <li>Gestion de projet</li>
+                            <li>Rigueur</li>
+                            </ul>
+                        </div>
+
+                        </div>
+
+                        <!-- PARCOURS PROFESSIONNEL -->
+                        <div class="experience-grid">
+
+                        <div class="experience-card highlight">
+                            <h3>Renault — IT & Gestion de projet</h3>
+                            <span class="exp-date">2024 – 2026</span>
+                            <p>
+                            Participation à des projets IT en entreprise, avec un focus sur la gestion
+                            de données et l’amélioration d’outils internes.
+                            </p>
+                            <ul>
+                            <li>Création de dashboards et suivi de KPI</li>
+                            <li>Automatisation de traitements de données avec Python</li>
+                            <li>Travail en environnement Agile</li>
+                            </ul>
+                        </div>
+
+                        <div class="experience-card">
+                            <h3>INRIA — Analyse de données</h3>
+                            <span class="exp-date">2022 – 2024</span>
+                            <p>
+                            Analyse des usages d’un outil digital sur plus de <strong>1000 utilisateurs</strong>.
+                            </p>
+                            <ul>
+                            <li>Extraction et traitement de données avec Python</li>
+                            <li>Analyse avec Pandas</li>
+                            <li>Création de visualisations pour la prise de décision</li>
+                            </ul>
+                        </div>
+
+                        <div class="experience-card">
+                            <h3>École 42 — Formation intensive</h3>
+                            <span class="exp-date">2021</span>
+                            <p>
+                            Formation intensive au développement basée sur l’autonomie et le peer-learning.
+                            </p>
+                            <ul>
+                            <li>Algorithmique et programmation bas niveau</li>
+                            <li>Apprentissage en autonomie</li>
+                            </ul>
+                        </div>
+
+                        <div class="experience-card">
+                            <h3>Médiathèque — Support utilisateurs</h3>
+                            <span class="exp-date">2021 – 2023</span>
+                            <p>
+                            Gestion des utilisateurs et des outils numériques en environnement public.
+                            </p>
+                            <ul>
+                            <li>Support et accompagnement des usagers</li>
+                            <li>Gestion des systèmes internes</li>
+                            </ul>
+                        </div>
+
+                        <div class="experience-card future">
+                            <h3>Futur — Ingénierie Réseaux & Sécurité</h3>
+                            <span class="exp-date">2026 – 2028</span>
+                            <p>
+                            Spécialisation prévue en systèmes, réseaux et cybersécurité
+                            dans le cadre d’un Master en alternance.
+                            </p>
+                        </div>
+
+                        </div>
+
+                    </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <!--*************************************************************************************************************************************************-->
+        
+        <!-- ÉTUDES -->
+        <section id="etudes" class="section studies-section">
+            <div class="section-content">
+                <div class="section-header">
+                    <!-- <div class="section-kicker">01 · ÉTUDES · PROJETS</div> -->
+                    <h2 class="section-title">Mes <em>projets.</em></h2>
+                </div>
+
+                <div class="archives-sep">
+                    <span class="section-kicker">PROJETS RÉCENTS</span>
+                </div>
+
+
+            <div class="top2-grid">
+
+                      <!-- AccessChecker -->
+                    <article class="study-card">
+                    <div class="study-plate plate-photo">
+                        <img src="img/projets/AccessChecker.webp" class="plate-direct-img" alt="AccessChecker">
+                    </div>
+                    <div class="study-info">
+                        <div class="study-meta">
+                        <span class="study-cat">Sécurité</span>
+                        <span class="study-year">2026</span>
+                        </div>
+                        <h3 class="study-title">AccessChecker</h3>
+                        <p class="study-desc">
+                        Infrastructure sécurisée avec LDAP, NGINX TLS et OWASP ModSecurity.
+                        </p>
+                        <div class="study-techs">
+                        <span class="tech-tag">NGINX</span>
+                        <span class="tech-tag">OWASP</span>
+                        <span class="tech-tag">Docker</span>
+                        </div>
+                        <div class="study-links">
+                        <button class="study-link" onclick="openProjectModal('access')">
+                            <i class="fas fa-plus"></i> Voir plus
+                        </button>
+                        </div>
+                    </div>
+                    </article>
+
+                    <!-- LDAP -->
+                    <!-- <article class="study-card">
+                    <div class="study-plate plate-photo">
+                        <img src="img/projets/ldap1.webp" class="plate-direct-img" alt="LDAP">
+                    </div>
+                    <div class="study-info">
+                        <div class="study-meta">
+                        <span class="study-cat">Systèmes</span>
+                        <span class="study-year">2025</span>
+                        </div>
+                        <h3 class="study-title">Authentification LDAP</h3>
+                        <p class="study-desc">
+                        Mise en place d’un système d’authentification Linux avec Docker et Python.
+                        </p>
+                        <div class="study-techs">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">LDAP</span>
+                        </div>
+                        <div class="study-links">
+                        <button class="study-link" onclick="openProjectModal('ldap')">
+                            <i class="fas fa-plus"></i> Voir plus
+                        </button>
+                        </div>
+                    </div>
+                    </article> -->
+
+                    <!-- IPC -->
+                    <article class="study-card">
+                    <div class="study-plate plate-photo">
+                        <img src="Images/progclient.png" class="plate-direct-img" alt="IPC">
+                    </div>
+                    <div class="study-info">
+                        <div class="study-meta">
+                        <span class="study-cat">Systèmes</span>
+                        <span class="study-year">2024</span>
+                        </div>
+                        <h3 class="study-title">Client – Serveur IPC</h3>
+                        <p class="study-desc">
+                        Application en C permettant la communication client–serveur via IPC pour la gestion de réservations.
+                        </p>
+                        <div class="study-techs">
+                        <span class="tech-tag">C</span>
+                        <span class="tech-tag">Linux</span>
+                        </div>
+                        <div class="study-links">
+                        <button class="study-link" onclick="openProjectModal('ipc')">
+                            <i class="fas fa-plus"></i> Voir plus
+                        </button>
+                        </div>
+                    </div>
+                    </article>
+
+                    <!-- Risk Record -->
+                    <article class="study-card">
+                    <div class="study-plate plate-photo">
+                        <img src="img/projets/risk.webp" class="plate-direct-img" alt="Risk Record">
+                    </div>
+                    <div class="study-info">
+                        <div class="study-meta">
+                        <span class="study-cat">CLI · Sécurité</span>
+                        <span class="study-year">2026</span>
+                        </div>
+                        <h3 class="study-title">Risk Record</h3>
+                        <p class="study-desc">
+                        Application CLI en Python permettant de gérer des enregistrements de risques via CRUD et JSON.
+                        </p>
+                        <div class="study-techs">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">CLI</span>
+                        <span class="tech-tag">JSON</span>
+                        </div>
+                        <div class="study-links">
+                        <button class="study-link" onclick="openProjectModal('risk')">
+                            <i class="fas fa-plus"></i> Voir plus
+                        </button>
+                        </div>
+                    </div>
+                    </article>
+
+                    <!-- Renault LUP -->
+                    <article class="study-card">
+                    <div class="study-plate plate-photo">
+                        <img src="img/projets/renault.webp" class="plate-direct-img" alt="Renault">
+                    </div>
+                    <div class="study-info">
+                        <div class="study-meta">
+                        <span class="study-cat">Data</span>
+                        <span class="study-year">2025</span>
+                        </div>
+                        <h3 class="study-title">Optimisation fichier LUP</h3>
+                        <p class="study-desc">
+                        Automatisation VBA sur Excel pour analyser et générer des KPI chez Renault.
+                        </p>
+                        <div class="study-techs">
+                        <span class="tech-tag">VBA</span>
+                        <span class="tech-tag">Excel</span>
+                        </div>
+                        <div class="study-links">
+                        <button class="study-link" onclick="openProjectModal('renault')">
+                            <i class="fas fa-plus"></i> Voir plus
+                        </button>
+                        </div>
+                    </div>
+                    </article>
+
+                  
+
+                    <!-- Colocation -->
+                    <article class="study-card">
+                    <div class="study-plate plate-photo">
+                        <img src="Images/colocation1.png" class="plate-direct-img" alt="Colocation">
+                    </div>
+                    <div class="study-info">
+                        <div class="study-meta">
+                        <span class="study-cat">Web</span>
+                        <span class="study-year">2024</span>
+                        </div>
+                        <h3 class="study-title">Application de colocation</h3>
+                        <p class="study-desc">
+                        Application web permettant de gérer tâches, dépenses et organisation d’une colocation.
+                        </p>
+                        <div class="study-techs">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">MySQL</span>
+                        </div>
+                        <div class="study-links">
+                        <button class="study-link" onclick="openProjectModal('colocation')">
+                            <i class="fas fa-plus"></i> Voir plus
+                        </button>
+                        <a href="https://www.youtube.com/watch?v=Teqj2Syxauk" target="_blank" class="study-link study-link-youtube">
+                            <i class="fab fa-youtube"></i> Vidéo
+                        </a>
+                        </div>
+                    </div>
+                    </article>
+
+                    </div>
+
+                <!-- LDAP -->
+                    <!-- <article class="study-card">
+                        <div class="study-plate plate-photo">
+                            <img src="img/projets/ldap1.webp" class="plate-direct-img" alt="LDAP">
+                        </div>
+                        <div class="study-info">
+                            <div class="study-meta">
+                                <span class="study-cat">Systèmes</span>
+                                <span class="study-year">2025</span>
+                            </div>
+                            <h3 class="study-title">Authentification LDAP</h3>
+                            <p class="study-desc">
+                                Mise en œuvre d’un système d’authentification Linux basé sur LDAP avec Docker et Python.
+                            </p>
+                            <div class="study-techs">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">LDAP</span>
+                            </div>
+                            <div class="study-links">
+                                <a href="https://github.com/laize-loucia/ldap1/tree/main" target="_blank" class="study-link">
+                                    <i class="fas fa-arrow-right"></i> Voir projet
+                                </a>
+                            </div>
+                        </div>
+                    </article> -->
+
+            <!--*************************************************************************************************************************************************-->
+
+                <!-- ARCHIVES -->
+                <div class="archives-sep">
+                    <span class="section-kicker">ARCHIVES</span>
+                </div>
+
+                <div class="archives-grid">
+
+
+                    <!-- Ourcq -->
+                    <article class="archive-card" onclick="openProjectModal('Ourcq Spot')" tabindex="0" role="button"
+                            aria-label="Voir le projet Client-Serveur IPC"
+                            onkeydown="if(event.key==='Enter'||event.key===' ')openProjectModal('clientserveur')">
+                        <span class="archive-num">01</span>
+                        <h4 class="archive-title">Ourcq Spot</h4>
+                        <p class="archive-desc">
+                            Application mobile avec agenda interactif et carte des activités du canal de l’Ourcq.
+                        </p>
+                        <div class="archive-techs">
+                            <span class="tech-tag-sm">Kotlin</span>
+                            <span class="tech-tag-sm">SQL</span>
+                        </div>
+                        <span class="archive-year">2024</span>
+                    </article>
+
+                    <article class="archive-card" onclick="openProjectModal('Dashboard Inria')" tabindex="1" role="button"
+                            aria-label="Voir le projet Client-Serveur IPC"
+                            onkeydown="if(event.key==='Enter'||event.key===' ')openProjectModal('clientserveur')">
+                        <span class="archive-num">01</span>
+                        <h4 class="archive-title">Ourcq Spot</h4>
+                        <p class="archive-desc">
+                            Analyse de 1000 utilisateurs avec Python et visualisation Streamlit.
+                        </p>
+                        <div class="archive-techs">
+                            <span class="tech-tag-sm">Python</span>
+                        </div>
+                        <span class="archive-year">2024</span>
+                    </article>
+
+                    
+                    <!-- Oria -->
+                    <article class="archive-card" onclick="openProjectModal('Site Web Oria')" tabindex="3" role="button"
+                            aria-label="Voir le projet"
+                            onkeydown="if(event.key==='Enter'||event.key===' ')openProjectModal('clientserveur')">
+                            <article class="archive-card">
+                            <h4 class="archive-title">Site Web Oria</h4>
+                            <p class="archive-desc">
+                                Site PHP MVC avec formulaire sécurisé et gestion bilingue.
+                            </p>
+                            <span class="archive-year">2024</span>
+                    </article>
+
+                    
+                    <!-- Scraping -->
+                    <article class="archive-card" onclick="openProjectModal('Web Scraping Wikipédia')" tabindex="4" role="button"
+                            aria-label="Voir le projet"
+                            onkeydown="if(event.key==='Enter'||event.key===' ')openProjectModal('clientserveur')">
+                            <article class="archive-card">
+                            <h4 class="archive-title">Web Scraping Wikipédia</h4>
+                            <p class="archive-desc">
+                                Extraction et analyse de données via API avec Python.
+                            </p>
+                            <span class="archive-year">2024</span>
+                    </article>
+
+
+                    <div class="projects-cta">
+                        <a href="https://github.com/laize-loucia" target="_blank" rel="noopener noreferrer" class="cta-link"
+                            aria-label="Voir l'intégralité du code sur GitHub">
+                            <span>VOIR LES PROJETS SUR GITHUB</span>
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+             </div>
+        </div>
+
+        <!--*************************************************************************************************************************************************-->
+
+        <!-- STACK -->
+        <section id="stack" class="section stack-section">
+            <div class="section-content">
+                <div class="section-header">
+                    <div class="section-kicker">02 · COMPÉTENCES PROFESSIONNELLES</div>
+                    <h2 class="section-title">Techniques, langues<br>et <em>certifications.</em></h2>
+                </div>
+
+                <div class="stack-4col">
+                    <div class="stack-col">
+                        <h3 class="stack-col-title">Langages</h3>
+                        <ul class="stack-list">
+                            <li class="stack-item"><i class="devicon-python-plain colored"></i> Python</li>
+                            <li class="stack-item"><i class="devicon-java-plain colored"></i> Java</li>
+                            <li class="stack-item"><i class="devicon-php-plain colored"></i> PHP</li>
+                            <li class="stack-item"><i class="devicon-c-plain colored"></i> C</li>
+                            <li class="stack-item"><i class="devicon-html5-plain colored"></i> HTML / CSS</li>
+                            <li class="stack-item"><i class="devicon-sqlite-plain colored"></i> SQL</li>
+                        </ul>
+                    </div>
+
+                    <div class="stack-col">
+                        <h3 class="stack-col-title">Frameworks</h3>
+                        <ul class="stack-list">
+                            <li class="stack-item"><i class="devicon-spring-plain colored"></i>Flutter</li>
+                            <li class="stack-item"><i class="devicon-flask-original" style="color:#a8d8a8"></i> Flask
+                            </li>
+                            <li class="stack-item"><i class="devicon-tailwindcss-plain colored"></i> Tailwind CSS</li>
+                        </ul>
+                    </div>
+
+                    <div class="stack-col">
+                        <h3 class="stack-col-title">Outils</h3>
+                        <ul class="stack-list">
+                            <li class="stack-item"><i class="devicon-git-plain colored"></i> Git / GitHub</li>
+                            <li class="stack-item"><i class="devicon-docker-plain colored"></i> Docker</li>
+                            <li class="stack-item"><i class="devicon-vscode-plain colored"></i> VS Code</li>
+                            <li class="stack-item"><i class="devicon-intellij-plain colored"></i> IntelliJ IDEA</li>
+                            <li class="stack-item"><i class="fab fa-linux"></i> Linux</li>
+                        </ul>
+                    </div>
+
+                    <div class="stack-col">
+                        <h3 class="stack-col-title">Langues</h3>
+                        <ul class="stack-list">
+                            <li class="stack-item">🇫🇷&nbsp; Français — langue maternelle</li>
+                            <li class="stack-item">🇬🇧&nbsp; Anglais — intermédiaire</li>
+                            <li class="stack-item">🇱🇰&nbsp; Tamoul — bilingue</li>
+                            <li class="stack-item">🇱🇰&nbsp; Tamoul — bilingue</li>
+
+                        </ul>
+                        <h3 class="stack-col-title stack-col-title--gap">Certifications</h3>
+                        <ul class="stack-list">
+                            <li class="stack-item cert-item"><i class="devicon-cisco-plain" style="color:#049fd9"></i>
+                                Cisco English for IT1</li>
+                            <li class="stack-item cert-item"><img src="Images/pix.png" class="cert-logo" alt="Pix">
+                                Certification Pix</li>
+                            <li class="stack-item cert-item"><img src="Images/projetvoltaire.png" class="cert-logo"
+                                    alt="Voltaire"> Projet Voltaire</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--*************************************************************************************************************************************************-->
+
+        <!-- CONTACT -->
+        <section id="contact" class="section contact-section">
+            <div class="section-content">
+                <div class="contact-glow-1"></div>
+                <div class="contact-glow-2"></div>
+
+                <div class="contact-layout">
+                    <div class="contact-left">
+                        <div class="section-kicker">03 · CONTACT</div>
+                        <h2 class="contact-title">Me <em>contacter. ( <a href="https://www.nohello.com/">Voir</a>) </em></h2>
+                        <p class="contact-subtitle">
+                            Je recherche une alternance en Développement / Réseaux / Systèmes / Cybersécurité pour
+                            2026–2028.
+                        </p>
+                        <div class="contact-methods">
+                            <a href="mailto:lloucia.laize@gmail.com" class="contact-method-card">
+                                <div class="contact-method-icon"><i class="fas fa-envelope"></i></div>
+                                <div class="contact-method-info">
+                                    <span class="contact-method-label">Email</span>
+                                    <span class="contact-method-value">lloucia.laize@gmail.com</span>
+                                </div>
+                            </a>
+                            <a href="https://github.com/banu005" target="_blank" rel="noopener noreferrer"
+                                class="contact-method-card" aria-label="Profil GitHub">
+                                <div class="contact-method-icon"><i class="fab fa-github" aria-hidden="true"></i></div>
+                                <div class="contact-method-info">
+                                    <span class="contact-method-label">GitHub</span>
+                                    <span class="contact-method-value">github.com/laize-loucia</span>
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/laize-loucia" target="_blank"
+                                rel="noopener noreferrer" class="contact-method-card"
+                                aria-label="Profil LinkedIn">
+                                <div class="contact-method-icon"><i class="fab fa-linkedin"></i></div>
+                                <div class="contact-method-info">
+                                    <span class="contact-method-label">LinkedIn</span>
+                                    <span class="contact-method-value">laize-loucia</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-right">
+                        <form class="contact-form" onsubmit="handleFormSubmit(event)" novalidate
+                            aria-label="Formulaire de contact">
+                            <input type="hidden" name="access_key" value="b250d046-74d3-4cc1-b007-22379203dde6">
+                            <input type="hidden" name="from_name" value="Portfolio">
+                            <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off"
+                                aria-hidden="true">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label" for="contact-prenom">Prénom</label>
+                                    <input type="text" id="contact-prenom" name="prenom" class="form-input"
+                                        placeholder="..." autocomplete="given-name">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="contact-nom">Nom</label>
+                                    <input type="text" id="contact-nom" name="nom" class="form-input" placeholder="..."
+                                        autocomplete="family-name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="contact-email">Email</label>
+                                <input type="email" id="contact-email" name="email" class="form-input" placeholder="..."
+                                    autocomplete="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="contact-sujet">Sujet</label>
+                                <input type="text" id="contact-sujet" name="sujet" class="form-input" placeholder="...">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="contact-message">Message</label>
+                                <textarea id="contact-message" name="message" class="form-textarea" rows="5"
+                                    placeholder="..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary form-submit">
+                                <span>Envoyer le message</span>
+                                <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="footer-divider"></div>
+
+                <div class="footer-bottom">
+                    <div class="footer-bottom-right">
+                        <span class="footer-credit">Site conçu et réalisé par Loucia Laizé - 2026</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Modal -->
+    <div id="projectModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeProjectModal()" aria-label="Fermer la modale">
+                <i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
