@@ -1,146 +1,93 @@
-
 <!DOCTYPE html>
-<html lang="fr" data-theme="dark">
-
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de Loucia Laizé">
-    <title>Loucia Laizé</title>
-    <link rel="stylesheet" href="style.css?v=9">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blog de veille cyber, writeups CTF et projets sécu — Uzznak">
+  <title>Uzznak — cyber & réseaux</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
 
+  <div id="header"></div>
 
+  <div class="body">
+    <div id="sidebar"></div>
 
-
-<div class="uz">
-  <h2 class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">Blog Uzznak — sécurité, réseaux, CTF</h2>
-
-  <header class="uz-header">
-    <div class="uz-logo"><em>//</em> uzznak</div>
-    <nav class="uz-nav">
-      <a class="active">accueil</a>
-      <a>writeups</a>
-      <a>projets</a>
-      <a>veille</a>
-      <a>à propos</a>
-    </nav>
-  </header>
-
-  <div class="uz-body">
-    <aside class="uz-sidebar">
-      <div class="uz-sidebar-section">
-        <div class="uz-sidebar-heading">Blog</div>
-        <a class="uz-sidebar-link active">Accueil</a>
-        <a class="uz-sidebar-link">Tous les articles</a>
-        <a class="uz-sidebar-link">À propos</a>
-      </div>
-      <hr class="uz-sidebar-divider">
-      <div class="uz-sidebar-section">
-        <div class="uz-sidebar-heading">Catégories</div>
-        <a class="uz-sidebar-link">Veille &amp; événements</a>
-        <a class="uz-sidebar-link">Writeups CTF</a>
-        <a class="uz-sidebar-link">Projets sécu</a>
-        <a class="uz-sidebar-link">Réseaux</a>
-      </div>
-      <hr class="uz-sidebar-divider">
-      <div class="uz-sidebar-section">
-        <div class="uz-sidebar-heading">Plateformes</div>
-        <a class="uz-sidebar-link">Root-Me →</a>
-        <a class="uz-sidebar-link">HackTheBox →</a>
-        <a class="uz-sidebar-link">GitHub →</a>
-      </div>
-    </aside>
-
-    <main class="uz-content">
-      <div class="uz-content-eyebrow">blog · sécurité · réseaux</div>
+    <main class="content">
+      <div class="eyebrow">blog · sécurité · réseaux</div>
       <h1>Notes d'une apprentie<br>en transition vers la cyber.</h1>
-      <p class="uz-content-sub">Veille technique, writeups CTF et projets sécu. Tout ce qui se passe entre les cours et les labos.</p>
+      <p class="content-sub">Veille technique, writeups CTF et projets sécu. Tout ce qui se passe entre les cours et les labos.</p>
+to
+      <div class="section-label" id="all">derniers articles</div>
 
-      <div class="uz-section-label">derniers articles</div>
+      <div class="article-list">
 
-      <div class="uz-article-list">
-        <div class="uz-article-row">
-          <div class="uz-date">28 juin<br>2026</div>
+        <a href="articles/vivatech-2026.html" class="article-row">
+          <div class="article-date">28 juin<br>2026</div>
           <div>
-            <p class="uz-article-title">Vivatech 2026 — ce que j'ai retenu côté cyber <span class="uz-pinned">épinglé</span></p>
-            <p class="uz-article-desc">Alice & Bob, Risk Hunter, souveraineté numérique. Mon retour depuis la 10ème édition.</p>
+            <p class="article-title">Vivatech 2026 — retour sur la 10ème édition <span class="pinned">épinglé</span></p>
+            <p class="article-desc">WASE, Alice & Bob, Femnov, Risk Hunter. Ce que j'ai vu et retenu.</p>
           </div>
-          <span class="uz-badge veille">veille</span>
+          <span class="badge veille">veille</span>
+        </a>
+
+        <div class="article-row ghost">
+          <div class="article-date">à<br>venir</div>
+          <div>
+            <p class="article-title">Writeup Root-Me — XSS stored</p>
+            <p class="article-desc">Analyse et exploitation d'une XSS persistante.</p>
+          </div>
+          <span class="badge writeup">writeup</span>
         </div>
 
-        <div class="uz-article-row uz-ghost">
-          <div class="uz-date">à<br>venir</div>
+        <div class="article-row ghost">
+          <div class="article-date">à<br>venir</div>
           <div>
-            <p class="uz-article-title">Writeup Root-Me — XSS stored</p>
-            <p class="uz-article-desc">Analyse et exploitation d'une XSS persistante.</p>
+            <p class="article-title">AccessChecker — retour sur le projet</p>
+            <p class="article-desc">Docker, NGINX, OpenLDAP, ModSecurity. Ce qui a marché, ce qui a cassé.</p>
           </div>
-          <span class="uz-badge writeup">writeup</span>
+          <span class="badge projet">projet</span>
         </div>
 
-        <div class="uz-article-row uz-ghost">
-          <div class="uz-date">à<br>venir</div>
+        <div class="article-row ghost">
+          <div class="article-date">à<br>venir</div>
           <div>
-            <p class="uz-article-title">AccessChecker — retour sur le projet</p>
-            <p class="uz-article-desc">Docker, NGINX, OpenLDAP, ModSecurity. Ce qui a marché, ce qui a cassé.</p>
+            <p class="article-title">BGP pour les humains — AS et routes</p>
+            <p class="article-desc">Ce que j'apprends en alternance réseau, vulgarisé.</p>
           </div>
-          <span class="uz-badge projet">projet</span>
+          <span class="badge reseau">réseau</span>
         </div>
 
-        <div class="uz-article-row uz-ghost">
-          <div class="uz-date">à<br>venir</div>
-          <div>
-            <p class="uz-article-title">BGP pour les humains — AS et routes</p>
-            <p class="uz-article-desc">Ce que j'apprends en alternance réseau, vulgarisé.</p>
-          </div>
-          <span class="uz-badge reseau">réseau</span>
-        </div>
       </div>
 
       <div style="margin-top: 2rem;">
-        <div class="uz-section-label">explorer par thème</div>
-        <div class="uz-cards">
-          <div class="uz-card">
-            <div class="uz-card-title">Writeups CTF</div>
-            <div class="uz-card-desc">Root-Me, HackTheBox. Méthodologie pas à pas.</div>
-          </div>
-          <div class="uz-card">
-            <div class="uz-card-title">Projets sécu</div>
-            <div class="uz-card-desc">Labos perso, outils, infrastructures.</div>
-          </div>
-          <div class="uz-card">
-            <div class="uz-card-title">Veille &amp; événements</div>
-            <div class="uz-card-desc">Ce que je lis, ce que je vois, ce que je retiens.</div>
-          </div>
-          <div class="uz-card">
-            <div class="uz-card-title">Réseaux</div>
-            <div class="uz-card-desc">BGP, SD-WAN, Ansible. Ce que j'apprends en alternance.</div>
-          </div>
+        <div class="section-label">explorer par thème</div>
+        <div class="theme-cards">
+          <a href="index.html#writeups" class="theme-card">
+            <div class="theme-card-title">Writeups CTF</div>
+            <div class="theme-card-desc">Root-Me, HackTheBox. Méthodologie pas à pas.</div>
+          </a>
+          <a href="index.html#projets" class="theme-card">
+            <div class="theme-card-title">Projets sécu</div>
+            <div class="theme-card-desc">Labos perso, outils, infrastructures.</div>
+          </a>
+          <a href="index.html#veille" class="theme-card">
+            <div class="theme-card-title">Veille &amp; événements</div>
+            <div class="theme-card-desc">Ce que je lis, ce que je vois, ce que je retiens.</div>
+          </a>
+          <a href="index.html#reseau" class="theme-card">
+            <div class="theme-card-title">Réseaux</div>
+            <div class="theme-card-desc">BGP, SD-WAN, Ansible. Ce que j'apprends en alternance.</div>
+          </a>
         </div>
       </div>
+
     </main>
   </div>
 
-  <footer class="uz-footer">
-    <span>uzznak · 2026 · aucune donnée collectée</span>
-    <div class="uz-footer-links">
-      <a>root-me</a>
-      <a>github</a>
-      <a>rss</a>
-    </div>
-  </footer>
-</div>
+  <div id="footer"></div>
 
-    <script src="script.js"></script>
-
+  <script src="components.js" data-root=""></script>
 </body>
-
 </html>
